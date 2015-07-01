@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Polymer Starter Kit" />
+  <title>Margot Duek</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- Chrome for Android theme color -->
+  <meta name="theme-color" content="#303F9F">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Tile color for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Polymer Starter Kit">
+  <link rel="icon" sizes="192x192" href="images/Margot.jpg">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="icon" sizes="192x192" href="images/Margot.jpg">
+
+  <!-- Tile icon for Win8 (144x144) -->
+  <meta name="msapplication-TileImage" content="images/Margot.jpg">
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+  <link rel="import" href="elements/elements.html">
+  <link rel="import" href="../bower_components/paper-button/paper-button.html">
+</head>
+
+
+
+
+<body unresolved class="fullbleed layout vertical">
+  <span id="browser-sync-binding"></span>
+  <template is="dom-bind" id="app">
+
+    <paper-drawer-panel id="paperDrawerPanel">
+      <div drawer>
+
+        <!-- Drawer Toolbar -->
+        <paper-toolbar id="drawerToolbar">
+          <span class="paper-font-title">CV Técnico</span>
+        </paper-toolbar>
+
+        <!-- Drawer Content -->
+          <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
+              <a data-route="home" href="/">
+                <iron-icon icon="info"></iron-icon>
+                <span>Curriculum</span>
+              </a>
+
+              <a data-route="users" href="/users">
+                <iron-icon icon="home"></iron-icon>
+                <span>Community work</span>
+              </a>
+
+              <a data-route="experience" href="/experience">
+                <iron-icon icon="work"></iron-icon>
+                <span>Experience</span>
+              </a>
+
+              <a data-route="contact" href="/contact">
+                <iron-icon icon="mail"></iron-icon>
+                <span>Contact</span>
+              </a>
+          </paper-menu>
+      </div>
+      <paper-header-panel main mode="waterfall-tall">
+
+        <!-- Main Toolbar -->
+        <paper-toolbar id="mainToolbar">
+          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+          <span class="flex"></span>
+
+    
+
+          <!-- Application name -->
+          <div class="middle paper-font-display2 app-name">Margot Duek</div>
+
+          <!-- Application sub title -->
+          <div class="bottom title"></div>
+
+        </paper-toolbar>
+
+        <!-- Main Content -->
+        <div class="content">
+          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+            <section data-route="home">
+              <paper-material elevaion = "1">
+                <h2>Community work</h2>
+                <ul>
+                  <li>Organizer and co-founder in GDG Polymer Mexico. We
+                    organize monthly meetups with lectures and codelabs to
+                    spread the word of web-components.
+                  </li>
+                  <li>
+                    Organizer and co-founder in GDG WonderCoders. We organize
+                    monthly meetups and codelabs for anyone who want’s to learn
+                    how to code. This group is focused on women, but everybody
+                    can come.
+                  </li>
+                  <li>
+                    Mentor at CodeParties. Sessions of codelabs to kids from 6
+                    to 12 years old where we teach them programming logic and
+                    show them the great impact software development has.
+                  </li>
+                  <li>
+                    Member of Students’ Board: TES (Technology Entrepreneurship
+                    Society. My role is to give workshops of front-end and web
+                    development for students.
+                  </li>
+                </ul>
+
+                <h2>Experience</h2>
+                <ul>
+                  <li>
+                    <h3>Devf Sensei(January 2015 - actual)</h3>
+                    <p>
+                      Dev.f is the first hacker school in Latin America,
+                      we believe that great programmers come from great people
+                      who want to learn how to code.
+                      <br>
+                      URL: http://www.devf.mx/
+                    </p>
+                  </li>
+                  <li>
+                    <h3>TutorOnline (August 2014 - March 2015)</h3>
+                    <p>
+                      We are committed to make a social impact in the education
+                      of students. We revolutionized the way students and tutors
+                      connect crafting an online platform for study mentoring in
+                      a variety of subjects. TutorOnline is the first platform
+                      of its kind in LATAM.
+                      <br>
+                      URL: www.tutoronline.la
+                      <br>
+                      <ul>
+                        <li> Co-founder and CTO</li>
+                        <li>Project leader of the programming.</li>
+                        <li>
+                          Made the contact with the first school we got in and
+                          opened the door for many others.
+                        </li>
+                        <li>
+                          Worked in a 5 member team with a great git branching
+                          model.
+                        </li>
+                      </ul>
+                    </p>
+                  </li>
+                </ul>
+
+                <h2>Certifications and courses</h2>
+                <ul>
+                  <li>
+                    <strong>Course Marva Israel Defence Forces </strong> – (Sde
+                    Boker military base)
+                  </li>
+                  <li>
+                    <strong>Dev.f- HackerSchool by Google Developers </strong>
+                    – Centraal Co-working space (August - December 2014)
+                  </li>
+                  <li>
+                    <strong>Introduction to Programming Course </strong> –
+                    Universidad Nacional Autónoma de México UNAM (August -
+                    September 2012)
+                  </li>
+                  <li>
+                    <strong>Google Adwords Fundamentals certification</strong> –
+                     January 2015
+                  </li>
+                  <li>
+                    <strong>Google Adwords Display certification </strong> –
+                    January 2015
+                  </li>
+                  <li>
+                    <strong>Entrepreneurship and Innovation Course</strong>  –
+                    Tecnológico de Monterrey CSF (August - December 2012)
+                  </li>
+                  <li>
+                    <strong>Workshop “Design of mobile interactive applications”
+                    </strong> – ITAM (January - May 2013)
+                  </li>
+                  <li>
+                    <strong>Monographica Workshop "Strategies and tactics
+                      through the mental game" </strong> – Universidad Anahuc
+                      (January - June 2009)
+                  </li>
+                </ul>
+                <h2>Academic</h2>
+                <ul>
+                  <li>
+                    <strong>2014 - actual: Engineering in information
+                    technologies</strong> – Tecnológico de Monterrey CSF
+                  </li>
+                </ul>
+              </paper-material>
+            </section>
+
+            <section data-route="users">
+              <div class = "cajasDeLinea">
+
+
+                <paper-material elevation="1">
+                  <h2>GDG Polymer México</h2>
+                  <p class="paper-font-body2">
+                    Organizer and co-founder in GDG Polymer Mexico. We organize
+                    monthly meetups with lectures and codelabs to spread the
+                    word of web-components.
+                  </p>
+
+                  <a class = "myButton" href="https://www.facebook.com/pages/GDG-Polymer-Mexico/802920786450767?fref=ts" target="_blank">
+                    <paper-button raised>more</paper-button>
+                  </a>
+                </paper-material>
+
+                <paper-material elevation="1">
+                  <h2>GDG WonderCoders</h2>
+                  <p class="paper-font-body2">
+                    Organizer and co-founder in GDG WonderCoders. We organize
+                    monthly meetups and codelabs for anyone who want’s to learn
+                    how to code. This group is focused on women, but everybody
+                    can come.
+                  </p>
+                  <a class = "myButton" href="https://www.facebook.com/GDGWonderCoders?fref=ts" target="_blank">
+                    <paper-button raised>more</paper-button>
+                  </a>
+                </paper-material>
+              </div>
+
+              <div class = "cajasDeLinea">
+                <paper-material elevation="1">
+                  <h2>MLH Latinoamérica</h2>
+                  <p class="paper-font-body2">This is another card.</p>
+                  <a class = "myButton" href="mlh.pdf" target="_blank">
+                    <paper-button raised>more</paper-button>
+                  </a>
+                </paper-material>
+
+                <paper-material elevation="1">
+                  <h2>Code Partys</h2>
+                  <p class="paper-font-body2">
+                    Mentor at CodeParties. Sessions of codelabs to kids from 6
+                    to 12 years old where we teach them programming logic and
+                    show them the great impact software development has.
+                  </p>
+                  <a class = "myButton" href="https://www.facebook.com/pages/GDG-Polymer-Mexico/802920786450767?fref=ts" target="_blank">
+                    <paper-button raised>more</paper-button>
+                  </a>
+                </paper-material>
+              </div>
+
+              <div class = "cajasDeLinea">
+                <paper-material elevation="1">
+                  <h2>Technology Entrepreneurship Society (TES)</h2>
+                  <p class="paper-font-body2">T
+                    Member of Students’ Board: TES (Technology Entrepreneurship
+                    Society). My role is to give workshops of front-end and web
+                    development for students.
+                  </p>
+                  <a class = "myButton" href="https://www.facebook.com/pages/GDG-Polymer-Mexico/802920786450767?fref=ts" target="_blank">
+                    <paper-button raised>more</paper-button>
+                  </a>
+                </paper-material>
+
+                <paper-material elevation="1">
+                  <h2>Poner que he ido a dar talleres y mentorias en muchos lugares</h2>
+                  <p class="paper-font-body2">
+                    como lo de GDS, Intel, TAGMX, Cetin
+                  </p>
+                  <a class = "myButton" href="https://www.facebook.com/pages/GDG-Polymer-Mexico/802920786450767?fref=ts" target="_blank">
+                    <paper-button raised>more</paper-button>
+                  </a>
+                </paper-material>
+              </div>
+<!--
+              <div class="card-container">
+                <div class="card">
+                  <div class="side">
+                    <paper-material  elevation="1">
+                      <img width = "180px" src="images/Capture.png" alt="">
+                    </paper-material>
+                  </div>
+                  <div class="side back">
+                    <paper-material elevation="1">
+                      <h2>GDG Polymer México</h2>
+                      <p class="paper-font-body2">
+                        Organizer and co-founder in GDG Polymer Mexico. We organize
+                        monthly meetups with lectures and codelabs to spread the
+                        word of web-components.
+                      </p>
+                    </paper-material>
+                  </div>
+                </div>
+              </div> -->
+
+
+            </section>
+
+            <section data-route="experience">
+              <paper-material elevation="1">
+                <h3>Dev.f Sensei(January 2015 - actual)</h3>
+                <p>
+                  Dev.f is the first hacker school in Latin America,
+                  we believe that great programmers come from great people
+                  who want to learn how to code.
+                </p>
+
+                <a class = "myButton" href="http://www.devf.mx/" target="_blank">
+                  <paper-button raised>more</paper-button>
+                </a>
+                <br><br>
+
+              </paper-material>
+              <paper-material elevation="1">
+                <h3>TutorOnline (August 2014 - March 2015)</h3>
+                <p>
+                  We are committed to make a social impact in the education
+                  of students. We revolutionized the way students and tutors
+                  connect crafting an online platform for study mentoring in
+                  a variety of subjects. TutorOnline is the first platform
+                  of its kind in LATAM.
+                </p>
+                <a class = "myButton" href="http://tutoronline.la/#/" target="_blank">
+                  <paper-button raised>more</paper-button>
+                </a>
+                <br><br>
+
+              </paper-material>
+              <paper-material elevation="1">
+                <h3>Pengo Stores (July 2012)</h3>
+                <p>
+                  Pengo is specialized in e-commerce company. We are programmers,
+                  engineers, artists, consumers, surfers, creative, e-commerce
+                  experts. We own a passion that drives us to discover the
+                  intricacies of the Web and the infinite possibilities of
+                  e-commerce to offer our customers a process of buying and
+                  selling free electronic complications.
+                </p>
+                <a class = "myButton" href="http://www.pengostores.com/" target="_blank">
+                  <paper-button raised>more</paper-button>
+                </a>
+                <br><br>
+              </paper-material>
+            </section>
+
+            <section data-route="contact">
+              <paper-material elevation="1">
+                <h2 class="paper-font-display2">Contact</h2>
+                <p>This is the contactooo section</p>
+              </paper-material>
+            </section>
+
+          </iron-pages>
+        </div>
+      </paper-header-panel>
+    </paper-drawer-panel>
+
+    <paper-toast id="caching-complete"
+                 duration="6000"
+                 text="Caching complete! This app will work offline.">
+    </paper-toast>
+
+    <platinum-sw-register auto-register
+                          clients-claim
+                          skip-waiting
+                          on-service-worker-installed="displayInstalledToast">
+      <platinum-sw-cache default-cache-strategy="networkFirst"
+                         precache-file="precache.json">
+      </platinum-sw-cache>
+    </platinum-sw-register>
+
+  </template>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild-->
+</body>
+
+</html>
