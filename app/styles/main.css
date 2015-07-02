@@ -23,6 +23,24 @@ a {
   display: flex;
   margin-top:2%;
 }
+.imagenRedonda{
+  border: 2px solid grey;
+  margin: 0;
+  padding: 0;
+  border-radius: 800px;
+  overflow: hidden;
+  width: 18em;
+  height: 18em;
+}
+.cardsImages{
+  float:left;
+}
+#misDatos{
+  float:right;
+  text-align: center;
+  font-size:2em;
+  margin-right:25%;
+}
 
 
 /*
