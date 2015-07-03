@@ -38,6 +38,7 @@
 
   <link rel="import" href="elements/elements.html">
   <link rel="import" href="../bower_components/paper-button/paper-button.html">
+  <link rel="import" href="../bower_components/paper-button/paper-button.html">
 </head>
 
 <body unresolved class="fullbleed layout vertical">
@@ -49,7 +50,7 @@
 
         <!-- Drawer Toolbar -->
         <paper-toolbar id="drawerToolbar">
-          <span class="paper-font-title">CV Técnico</span>
+          <span class="paper-font-title"></span>
         </paper-toolbar>
 
         <!-- Drawer Content -->
@@ -213,13 +214,12 @@
 
                 <paper-material elevation="1">
                   <h2>GDG Polymer México</h2>
-                  <img class = "cardsImages" src="images/polymer.png" alt="">
+                  <!--<img class = "cardsImages" src="images/polymer.png" alt="">-->
                   <p class="paper-font-body2">
                     Organizer and co-founder in GDG Polymer Mexico. We organize
                     monthly meetups with lectures and codelabs to spread the
                     word of web-components.
                   </p>
-
                   <a class = "myButton" href="https://www.facebook.com/pages/GDG-Polymer-Mexico/802920786450767?fref=ts" target="_blank">
                     <paper-button raised>more</paper-button>
                   </a>
@@ -242,7 +242,12 @@
               <div class = "cajasDeLinea">
                 <paper-material elevation="1">
                   <h2>MLH</h2>
-                  <p class="paper-font-body2">This is another card.</p>
+                  <p class="paper-font-body2">
+                    Major League Hacking's mission is to spread the hacker ethos
+                    to every student on the planet; to cultivate communities
+                    where aspiring hackers have the opportunity to learn, build,
+                    and share their creations with the world.
+                  </p>
                   <a class = "myButton" href="mlh.pdf" target="_blank">
                     <paper-button raised>more</paper-button>
                   </a>
@@ -275,13 +280,23 @@
                 </paper-material>
 
                 <paper-material elevation="1">
-                  <h2>Mentoring in companies</h2>
+                  <h2>Mentoring</h2>
                   <p class="paper-font-body2">
-                    como lo de GDS, Intel, TAGMX, Cetin
+                    <ul>
+                      <a href="https://plus.google.com/+DesarrolladoresGoogle/">
+                        <li><strong>Google Developer Summit México</strong> - Mayo 2015</li>
+                      </a>
+                      <a href="http://ctinmx.com/">
+                        <li><strong>Centro de tecnología e innovación </strong>- Junio 2015</li>
+                      </a>
+                      <a href="http://devday4w.com/">
+                        <li><strong>DevDay 4 Women Intel</strong> - Junio 2015</li>
+                      </a>
+                      <a href="http://www.arca-lab.com/">
+                        <li><strong>TagCDMX </strong>- Julio 2015</li>
+                      </a>
+                    </ul>
                   </p>
-                  <a class = "myButton" href="https://www.facebook.com/pages/GDG-Polymer-Mexico/802920786450767?fref=ts" target="_blank">
-                    <paper-button raised>more</paper-button>
-                  </a>
                 </paper-material>
               </div>
             <!--

@@ -15,7 +15,12 @@ body {
 a {
   text-decoration: none;
 }
+li {
+  text-decoration: none;
+
+}
 .myButton{
+  margin-top: 60px;
   float:right;
 }
 
@@ -38,8 +43,8 @@ a {
 #misDatos{
   float:right;
   text-align: center;
-  font-size:2em;
-  margin-right:25%;
+  font-size:1.7em;
+  margin-right:20%;
 }
 
 
